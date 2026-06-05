@@ -39,49 +39,54 @@ The frequency of oscillation is given by fo = 1/2πRC
 <img width="414" height="324" alt="image" src="https://github.com/user-attachments/assets/9415e086-a465-454d-8812-01a0708beb25" />
 
 ## TABULATION
-## WEIN BRIDGE
 
-| S.NO | Amplitude (Volts) | Time Period (ms) | Frequency (Hz) |
-|------|-------------------|------------------|----------------|
-| 1    |                   |                  |                |
-| 2    |                   |                  |                |
-| 3    |                   |                  |                |
-| 4    |                   |                  |                |
-| 5    |                   |                  |                |
+<img width="761" height="386" alt="image" src="https://github.com/user-attachments/assets/d7f7cac3-7d00-4a1b-adcd-906dd73c700c" />
 
-## RC PHASE SHIFT
-
-| S.NO | Amplitude (Volts) | Time Period (ms) | Frequency (Hz) |
-|------|-------------------|------------------|----------------|
-| 1    |                   |                  |                |
-| 2    |                   |                  |                |
-| 3    |                   |                  |                |
-| 4    |                   |                  |                |
-| 5    |                   |                  |                |
 
 ## DESIGN:
 ## RC PHASE SHIFT OSCILLATOR
-fo = 1 /  6 (2RC) Rf  29 R1
-C = 0.01F, fo = 200 Hz.
-R = 1 /  6 (2  f C ) = 3.3 k
-Therefore, Choose R = 3.3k
+```
+fo = 1 / √6 (2πRC)
+
+Rf ≥ 29 R1
+
+C = 0.01µF, fo = 200 Hz.
+
+R = 1 / √6 (2π f C ) = 3.3 kΩ
+
+Therefore, Choose R = 3.3kΩ
+
 To prevent loading,
-R1   10 R
-R1 =10 R = 33 k. Rf = 29R1=1MΩ
 
+R1 ≥ 10 R
+
+R1 = 10 R = 33 kΩ
+
+Rf = 29R1 = 1MΩ
+
+```
 ## WIEN BRIDGE OSCILLATOR
-Select frequency f0 = 1KHz
+```
 fo = 1/2πRC
-A = 1+(Rf / R1) = 3.
-To find R & Rf.
-Therefore Rf = 2R1 & assume C = 0.1μf & find R from
-R=1/2πfC
-=1/2*3.14*1*103*0.1*10-6
-= 1.59KΩ.
-Assume R1 = 10R & find Rf from Rf = 2R1
-Therefore R1 = 1.5K *10=15KΩ
-Rf = 15K *2=30KΩ
 
+A = 1 + (Rf / R1) = 3
+
+To find R & Rf.
+
+Therefore Rf = 2R1 & assume C = 0.1µF & find R from
+
+R = 1/2πfC
+
+= 1/2 × 3.14 × 1 × 10³ × 0.1 × 10⁻⁶
+
+= 1.59KΩ
+
+Assume R1 = 10R & find Rf from Rf = 2R1
+
+Therefore R1 = 1.5K × 10 = 15KΩ
+
+Rf = 15K × 2 = 30KΩ
+```
 ## PROCEDURE
 PROCEDURE:
 1.	Connect the circuit as shown in fig. With the design values.
@@ -89,7 +94,10 @@ PROCEDURE:
 3.	Measure the output wave frequency and amplitude
 
 ## OUTPUT
-PASTE UR GRAPH 
+
+<img width="1495" height="1137" alt="image" src="https://github.com/user-attachments/assets/9facbb31-4b8d-4aa0-b13e-16cf0f81a1aa" />
+
+<img width="1600" height="1100" alt="image" src="https://github.com/user-attachments/assets/8a92d172-92f4-4bfa-a2b5-a18236f30f18" />
 
 ## RESULT
 Thus the RC Phase Shift and Wien Bridge oscillators are designed and tested using op-amp IC 741.
